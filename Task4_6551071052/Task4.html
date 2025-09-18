@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FROM TEST</title>
+</head>
+<body>
+    <h1>People </h1>
+     <form action="get_result.html" method="get">
+    <fieldset>
+      <legend>Thông tin cơ bản</legend> 
+        <label for = "username" > Họ và tên  : </label>
+        <input  type = "text" name = "username" id = "username" > <br> <br>
+    </form> 
+ <label>Tuổi:</label><br>
+      <input type="radio" name="age" value="<18"> &lt;18<br>
+      <input type="radio" name="age" value="19-35"> 19–35<br>
+      <input type="radio" name="age" value="36-48"> 36–48<br>
+      <input type="radio" name="age" value=">49"> &gt;49<br><br>
+    <label for = "address" > Nghề nghiệp : </label>
+        <input  type = "text" name = "address" id = "address" > <br> <br>
+    </form>
+        <label for="country"> Quốc gia: </label>
+        <select name="country" id="country">
+            <option value="0"> country</option>
+            <option value="1"> Tuyên Quang</option>
+            <option value="2"> Lào Cai</option>
+            <option value="3"> Thái Nguyên</option>
+            <option value="4"> Phú Thọ</option>
+            <option value="5"> Bắc Ninh</option>
+            <option value="6"> Hưng Yên</option>
+            <option value="7"> Hải Dương </option>
+            <option value="8"> Ninh Bình</option>
+            <option value="9"> Quảng Trị</option>
+            <option value="10"> Đà Nẵng</option>
+            <option value="11"> Quãng Ngãi</option>
+            <option value="12"> Gai Lai</option>
+            <option value="13"> Khánh Hòa</option>
+            <option value="14"> Lâm Đồng </option>
+            <option value="15"> Đăk Lăk</option>
+            <option value="16"> Hồ Chí Minh</option>
+            <option value="17"> Dồng Nai</option>
+            <option value="18"> Tây Ninh</option>
+            <option value="19"> Cần Thơ</option>
+            <option value="20"> Vĩnh Long</option>
+            <option value="21"> Đồng Tháp</option>
+            <option value="22"> Cà Mau</option>
+            <option value="23"> An Giang</option>
+            <option value="24"> Hà Nội </option>
+            <option value="25"> Thanh Hóa</option>
+            <option value="26"> Lạng Sơn</option>
+            <option value="27"> Huế</option>
+            <option value="28"> Nghệ An</option>
+            <option value="29"> Hà Tĩnh</option>
+            <option value="30"> Lai Châu</option>
+            <option value="31"> Điện Biên </option>
+            <option value="32"> Cao Bằng</option>
+            <option value="33"> Quảng Ninh</option>
+            <option value="34"> Sơn La</option>
+        </select>
+        <br> <br>
+        <label> Sở thích: </label>
+        <label for="Hobbies">Bóng đá </label>
+        <input type="checkbox" name="Hobbies" id="Bóng đá">
+        <label for="Games">Game </label>
+        <input type="checkbox" name="Hobbies" id="Game">
+        <label for="sleep">Ngủ</label>
+        <input type="checkbox" name="Hobbies" id="Ngủ">
+        <label for="Travelling">Du lịch</label>
+        <input type="checkbox" name="Hobbies" id="Du lịch">
+        <br> <br>
+
+        <label> Bạn biết đến trang web này bằng cách nào? </label><br>
+        <textarea name="message" id="message" cols="20" rows="10">
+        </textarea>
+        <br> <br>
+        <input type="Submit" value="Gửi bằng get">
+    </form>
+     <form action="post_result.html" method="post">
+    <fieldset>
+      <legend>Thông tin cơ bản (POST)</legend>
+       <label for="name2">Họ và tên:</label><br>
+      <input type="text" id="name2" name="name" required><br><br>
+
+      <label>Tuổi:</label><br>
+      <input type="radio" name="age" value="<18"> &lt;18<br>
+      <input type="radio" name="age" value="19-35"> 19–35<br>
+      <input type="radio" name="age" value="36-48"> 36–48<br>
+      <input type="radio" name="age" value=">49"> &gt;49<br><br>
+
+      <label for="profession2">Nghề nghiệp:</label><br>
+      <input type="text" id="profession2" name="profession"><br><br>
+
+      <label for="country2">Quốc gia:</label><br>
+      <select id="country2" name="country">
+        <option value="Vietnam">Việt Nam</option>
+        <option value="Japan">Nhật Bản</option>
+        <option value="USA">Hoa Kỳ</option>
+        <option value="France">Pháp</option>
+      </select><br><br>
+
+      <label for="interests2">Sở thích:</label><br>
+      <select id="interests2" name="interests[]" multiple size="4">
+        <option value="Reading">Đọc sách</option>
+        <option value="Traveling">Du lịch</option>
+        <option value="Coding">Lập trình</option>
+        <option value="Gaming">Chơi game</option>
+      </select><br><br>
+
+      <label for="discovery2">Bạn biết đến trang web này bằng cách nào?</label><br>
+      <textarea id="discovery2" name="discovery" rows="4" cols="40"></textarea><br><br>
+
+      <input type="submit" value="Gửi bằng POST">
+    </fieldset>
+  </form>
+</body>
+</html>

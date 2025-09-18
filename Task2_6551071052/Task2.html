@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .column {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .column:not(:last-child) {
+      border-right: 1px solid #000;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="logo" width="100">
+    <div class="title">
+      <h1>Trường đại học giao thông vận tải</h1>
+      <h2>Phân hiệu tại thành phố Hồ Chí Minh</h2>
+    </div>
+  </div>
+  <div class="menu">
+    <span class="underline">Presentation</span>
+    <span class="underline">Studies</span>
+    <span class="underline">Staff</span>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <h3>News</h3>
+      <p><b>News 1 - Date</b></p>
+      <p>Description</p>
+      <p><b>News 2 - Date</b></p>
+      <p>Description</p>
+    </div>
+    <div class="column">
+      <h3>Announcements</h3>
+      <p><b>Open course 1</b></p>
+      <p>Description</p>
+      <p><b>Open course 2</b></p>
+      <p>Description</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Contact: <a href="mailto:info@university.com">info@university.com</a></p>
+    <p>&copy; University, 2011</p>
+  </div>
+</body>
+</html>
